@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+  background: #f5eee9;
+}
+
+.blog_wrapper {
+	padding: 100px 0;
+}
+
+.blog_wrapper .blog_item {
+	max-width: 395px;
+	width: 100%;
+	margin: 0 auto;
+	border-radius: 24px;
+	background: #ffffff;
+	padding: 20px;
+}
+
+.blog_wrapper .blog_item figure {
+	margin: 0 !important;
+	position: relative;
+	transition: 0.4s all ease-in-out;
+	overflow: hidden;
+	border-radius: 24px;
+	width: 100%;	
+	height: 100%;
+}
+
+.blog_wrapper .blog_item:hover figure .blog_img {
+	transform: scale(1.10);
+}
+
+.blog_wrapper .blog_item figure .blog_img {
+	width: 100%;
+	height: auto;
+	border-radius: 24px;
+	transition: 0.4s all ease-in-out;
+}
+
+.blog_wrapper .blog_item figure span {
+	height: 30px;
+	padding: 0 15px;
+	border-radius: 10px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+	background: #12715b;
+	display: inline-flex;
+	align-items: center;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+.blog_wrapper .blog_item .blog_content {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.blog_wrapper .blog_item .blog_content h2 {
+	font-size: 30px;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.blog_wrapper .blog_item .blog_content h2 a {
+	color: #000000;
+	text-decoration: none;
+	line-height: normal;
+	transition: 0.4s all ease-in-out;
+}
+
+.blog_wrapper .blog_item .blog_content h2 a:hover {
+	 color: #535353;
+}
+
+.blog_wrapper .blog_item .blog_content p {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+}
+
+.blog_wrapper .blog_item .blog_content p img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.blog_wrapper .blog_item .blog_content p span {
+	margin: 0 5px;
+}
+
+.blog_wrapper .blog_item .blog_content p .name_head {
+	font-weight: 600;
+	color: #000000;
+}
+
+.blog_wrapper .blog_item .blog_content p .date {
+    color: #535353;
+}
